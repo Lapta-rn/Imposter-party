@@ -1,0 +1,22 @@
+[
+  { "location": "Beach", "characters": ["Lifeguard", "Surfer", "Tourist", "Ice Cream Vendor", "Volleyball Player", "Sunbather", "Fisherman"] },
+  { "location": "Airport", "characters": ["Pilot", "Flight Attendant", "Security Guard", "Passenger", "Baggage Handler", "Customs Officer", "Lost Tourist"] },
+  { "location": "Hospital", "characters": ["Doctor", "Nurse", "Patient", "Surgeon", "Receptionist", "Paramedic", "Worried Visitor"] },
+  { "location": "School", "characters": ["Teacher", "Student", "Principal", "Janitor", "Coach", "Librarian", "Cafeteria Worker"] },
+  { "location": "Restaurant", "characters": ["Chef", "Waiter", "Customer", "Manager", "Dishwasher", "Hostess", "Food Critic"] },
+  { "location": "Movie Theater", "characters": ["Usher", "Projectionist", "Moviegoer", "Ticket Seller", "Concession Worker", "Manager", "Janitor"] },
+  { "location": "Cruise Ship", "characters": ["Captain", "Passenger", "Bartender", "Lifeguard", "Entertainer", "Chef", "Crew Member"] },
+  { "location": "Bank", "characters": ["Teller", "Manager", "Customer", "Security Guard", "Robber", "Loan Officer", "Janitor"] },
+  { "location": "Casino", "characters": ["Dealer", "Gambler", "Security Guard", "Bartender", "Pit Boss", "Waitress", "High Roller"] },
+  { "location": "Space Station", "characters": ["Astronaut", "Commander", "Scientist", "Engineer", "Doctor", "Pilot", "Visitor"] },
+  { "location": "Pirate Ship", "characters": ["Captain", "First Mate", "Sailor", "Cook", "Prisoner", "Navigator", "Stowaway"] },
+  { "location": "Zoo", "characters": ["Zookeeper", "Veterinarian", "Visitor", "Tour Guide", "Photographer", "Lost Child", "Security Guard"] },
+  { "location": "Wedding", "characters": ["Bride", "Groom", "Best Man", "Bridesmaid", "Photographer", "Officiant", "Wedding Crasher"] },
+  { "location": "Gym", "characters": ["Trainer", "Member", "Receptionist", "Yoga Instructor", "Nutritionist", "Janitor", "Newbie"] },
+  { "location": "Police Station", "characters": ["Detective", "Officer", "Suspect", "Lawyer", "Witness", "Chief", "Receptionist"] },
+  { "location": "Amusement Park", "characters": ["Ride Operator", "Visitor", "Mascot", "Security Guard", "Food Vendor", "Photographer", "Manager"] },
+  { "location": "Library", "characters": ["Librarian", "Student", "Researcher", "Janitor", "Tourist", "Security Guard", "Author"] },
+  { "location": "Submarine", "characters": ["Captain", "Sonar Operator", "Engineer", "Cook", "Sailor", "Doctor", "New Recruit"] },
+  { "location": "Ski Resort", "characters": ["Ski Instructor", "Tourist", "Lift Operator", "Snowboarder", "Ski Patrol", "Bartender", "Photographer"] },
+  { "location": "Music Festival", "characters": ["Performer", "Security Guard", "Vendor", "Photographer", "Fan", "Sound Engineer", "Lost Tourist"] }
+]
