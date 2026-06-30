@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Imposter Party 🎭</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<div id="app">
+
+  <!-- HOME -->
+  <section id="screen-home" class="screen active">
+    <h1 class="logo">🎭 Imposter<br>Party</h1>
+    <p class="tagline">Everyone gets a role. One person's role is wrong&nbsp;&mdash; and they don't even know it.</p>
+
+    <div class="card">
+      <input id="home-name" class="input" type="text" placeholder="Your name" maxlength="20">
+      <button id="btn-show-create" class="btn btn-primary">🎉 Host a Room</button>
+      <button id="btn-show-join" class="btn btn-secondary">🔑 Join a Room</button>
+    </div>
+
+    <div id="join-box" class="card hidden">
+      <input id="join-code" class="input input-code" type="text" placeholder="ROOM CODE" maxlength="4">
+      <button id="btn-join" class="btn btn-primary">Join</button>
+    </div>
+
+    <p id="home-error" class="error hidden"></p>
+  </section>
+
+  <!-- LOBBY -->
+  <section id="screen-lobby" class="screen">
+    <h2>Room Code</h2>
+    <div class="room-code" id="lobby-code">----</div>
+    <p class="hint">Tell your friends to join this code on the same WiFi</p>
+
+    <h3>Players</h3>
+    <ul id="lobby-players" class="player-list"></ul>
+
+    <button id="btn-start" class="btn btn-primary hidden">▶️ Start Game</button>
+    <p id="lobby-wait" class="hint">Waiting for the host to start the game…</p>
+    <p id="lobby-min-hint" class="hint small">Need at least 3 players to start.</p>
+  </section>
+
+  <!-- ROLE -->
+  <section id="screen-role" class="screen">
+    <h2>Your Role</h2>
+    <div class="role-card">
+      <div class="role-label">LOCATION</div>
+      <div class="role-value" id="role-location">???</div>
+      <div class="role-label">YOU ARE</div>
+      <div class="role-value role-character" id="role-character">???</div>
+    </div>
+    <p class="hint">Talk out loud with your friends about this location &mdash; but don't say it directly! One person here has a different role and doesn't realize it.</p>
+    <button id="btn-ready" class="btn btn-primary">✅ I've Got It — Start Discussion</button>
+    <p id="ready-progress" class="hint small"></p>
+  </section>
+
+  <!-- DISCUSSION -->
+  <section id="screen-discussion" class="screen">
+    <h2>Discuss!</h2>
+    <div class="timer" id="discussion-timer">4:00</div>
+    <p class="hint">Talk it out face-to-face. Ask each other questions about the location. Try to spot who seems lost!</p>
+    <button id="btn-end-discussion" class="btn btn-secondary hidden">⏭️ Skip to Voting (Host)</button>
+  </section>
+
+  <!-- VOTING -->
+  <section id="screen-voting" class="screen">
+    <h2>Who's the Imposter?</h2>
+    <p class="hint">Vote for the player you think had the wrong role</p>
+    <ul id="voting-players" class="vote-list"></ul>
+    <p id="vote-progress" class="hint small"></p>
+  </section>
+
+  <!-- RESULTS -->
+  <section id="screen-results" class="screen">
+    <h2 id="results-headline">Results</h2>
+    <div class="result-card">
+      <div class="result-row"><span>🕵️ Imposter</span><strong id="result-imposter-name">-</strong></div>
+      <div class="result-row"><span>📍 Real Location</span><strong id="result-real-location">-</strong></div>
+      <div class="result-row"><span>🎭 Imposter Thought</span><strong id="result-imposter-location">-</strong></div>
+    </div>
+    <h3>Votes</h3>
+    <ul id="results-tally" class="tally-list"></ul>
+    <button id="btn-play-again" class="btn btn-primary hidden">🔁 Play Again</button>
+    <p id="results-wait" class="hint">Waiting for the host to start another round…</p>
+  </section>
+
+</div>
+
+<script src="/app.js"></script>
+</body>
+</html>
